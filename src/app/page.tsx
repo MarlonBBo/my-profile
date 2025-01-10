@@ -1,15 +1,23 @@
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { MdOutlineContactMail } from "react-icons/md";
+import { SiReaddotcv } from "react-icons/si";
+
+
+
+
 
 
 export default function Home() {
   return (
     <div className="flex h-screen">
       <div className="w-1/4 p-5">
-        <aside className="bg-gray-700 h-full flex flex-col rounded-lg font-bold text-2xl p-4 text-white w-full"> 
-            <Link href="#" className="w-full p-4 my-8 text-center  shadow-slate-800 shadow-sm rounded-full border-2 border-gray-700  bg-gray-700 hover:border-slate-300 transition duration-700">Github</Link>
-            <Link href="#" className="w-full p-4 mb-8 text-center  shadow-slate-800 shadow-sm rounded-full border-2 border-gray-700  bg-gray-700 hover:border-slate-300 transition duration-700">Linkedin</Link>
-            <Link href="#" className="w-full p-4 mb-8 text-center  shadow-slate-800 shadow-sm rounded-full border-2 border-gray-700  bg-gray-700 hover:border-slate-300 transition duration-700">Contato</Link>
-            <Link href="#" className="w-full p-4 mb-8 text-center  shadow-slate-800 shadow-sm rounded-full border-2 border-gray-700  bg-gray-700 hover:border-slate-300 transition duration-700">Download</Link>
+        <aside className="border-2 h-full flex flex-col rounded-md font-mono text-2xl p-4 text-white w-full"> 
+            <Link href="#" className="w-full p-4 my-8 text-center  border-b rounded-sm border-x-0 border-t-0 border-b-white flex justify-center items-center gap-2 hover:text-black hover:bg-white transition duration-500"><FaGithub /> Github</Link>
+            <Link href="#" className="w-full p-4 mb-8 text-center  border-b rounded-sm border-x-0 border-t-0 border-b-white flex justify-center items-center gap-2 hover:text-black hover:bg-white transition duration-500"><CiLinkedin /> Linkedin</Link>
+            <Link href="#" className="w-full p-4 mb-8 text-center  border-b rounded-sm border-x-0 border-t-0 border-b-white flex justify-center items-center gap-2 hover:text-black hover:bg-white transition duration-500"><MdOutlineContactMail /> Contato</Link>
+            <Link href="#" className="w-full p-4 mb-8 text-center  border-b rounded-sm border-x-0 border-t-0 border-b-white flex justify-center items-center gap-2 hover:text-black hover:bg-white transition duration-500"><SiReaddotcv /> Currículo</Link>
         </aside>
       </div>
 
@@ -21,19 +29,5 @@ export default function Home() {
   );
 }
 
-/*
-<ul className="font-bold text-2xl h-5/6 p-4 text-white w-full">
-              <li className="mb-5 text-center border-b-2 p-5 rounded-lg hover:bg-gray-600">
-                <a href="#">Github</a>
-              </li>
-              <li className="mb-5 text-center border-b-2 p-5 rounded-lg">
-                <a href="#">Linkedin</a>
-              </li >
-              <li className="mb-5 text-center border-b-2 p-5 rounded-lg">
-                <a href="#">Contato</a>
-              </li>
-              <li className="mb-5 text-center border-b-2 p-5 rounded-lg">
-                <a href="#">Download</a>
-              </li>
-            </ul>
-*/
+
+// hover:border-white transition duration-500
