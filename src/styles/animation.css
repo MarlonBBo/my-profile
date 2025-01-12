@@ -1,0 +1,49 @@
+.txt-animado{
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+
+.txt-animado span{
+    position: relative;
+
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #a1a1aa;
+    animation: palavras 20s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: calc(100% + 10px);
+    border-left: 2px solid white;
+    right: -10px;
+    animation: cursor 0.8s infinite, digitando 20s steps(15) infinite;
+    width: calc(100% + 10px);
+    background-color: #18181B;
+}
+
+@keyframes digitando {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 10px);
+    }
+    
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #18181B;
+    }
+}
+
+@keyframes palavras {
+    0%,100%{
+        content: "Hello, I'm Marlon B. Borges";
+    }
+}
