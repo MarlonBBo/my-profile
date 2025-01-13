@@ -1,8 +1,17 @@
 .txt-animado{
     font-size: 25px;
     font-weight: 300;
-    
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
+
+@media (max-width: 768px) {
+    .txt-animado{
+        justify-content: center;
+        align-items: center;
+    }
+  }
 
 .txt-animado span{
     position: relative;
@@ -12,7 +21,7 @@
 .txt-animado span::before{
     content: "";
     color: #a1a1aa;
-    animation: palavras 20s infinite;
+    animation: palavras 30s infinite;
 }
 
 .txt-animado span::after{
@@ -21,7 +30,7 @@
     height: calc(100% + 10px);
     border-left: 2px solid white;
     right: -10px;
-    animation: cursor 0.8s infinite, digitando 20s steps(15) infinite;
+    animation: cursor 0.8s infinite, digitando 30s steps(18) infinite;
     width: calc(100% + 10px);
     background-color: #18181B;
 }
@@ -44,6 +53,6 @@
 
 @keyframes palavras {
     0%,100%{
-        content: "Hello, I'm Marlon B. Borges";
+        content: "Hi, I'm Marlon Barreto";
     }
 }
