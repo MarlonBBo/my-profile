@@ -27,7 +27,7 @@
 .txt-animado span::after{
     content: "";
     position: absolute;
-    height: calc(100% + 10px);
+    height: 85%;
     border-left: 2px solid white;
     right: -10px;
     animation: cursor 0.8s infinite, digitando 30s steps(18) infinite;
