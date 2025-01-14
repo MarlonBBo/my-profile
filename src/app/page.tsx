@@ -14,6 +14,8 @@ type Tab = {
   label: string;
 }
 
+
+
 const techs = [
   "TypeScript",
   "JavaScript",
@@ -115,13 +117,8 @@ export default function Home() {
               ))}
           </div>
           <div>
-            
+            {tabContent[activeTab]}
           </div>
-        </section>
-
-        <section className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
-          <h1 className="text-2xl font-bold">Sobre mim</h1>
-          <p className="text-lg font-sans text-zinc-400">Bem vindo ao meu perfil</p>
         </section>
       </div>
     </div>
