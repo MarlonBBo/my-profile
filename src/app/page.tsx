@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -5,8 +7,12 @@ import { MdEmail } from "react-icons/md";
 import { IoIosPaper } from "react-icons/io";
 import Image from "next/image";
 import '../styles/animation.css';
+import { useState } from "react";
 
-
+type Tab = {
+  id: number;
+  label: string;
+}
 
 const techs = [
   "TypeScript",
@@ -20,6 +26,41 @@ const techs = [
 
 
 export default function Home() {
+
+  const [activeTab, setActiveTab] = useState<number>(0);
+
+  const tabs: Tab[] = [
+    { id: 0, label: "Sobre mim"},
+    { id: 1, label: "Experiência profissional"},
+    { id: 2, label: "Formação academica"},
+  ];
+
+  const tabContent = {
+    0: (
+      <div className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
+        <h1 className="text-2xl font-bold">Sobre mim</h1>
+          <p className="text-lg font-sans text-zinc-400">Olá, sou Marlon Barreto Borges, desenvolvedor Fullstack.  
+            Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
+            Atualmente desenvolvo minhas aplicações com <strong>Javascript</strong>, uso tecnologias como: <strong>Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, Docker, Git</strong></p>
+      </div>
+  ),
+
+  1: (
+    <div className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
+      <h1 className="text-2xl font-bold">Experiência profissional</h1>
+        <p className="text-lg font-sans text-zinc-400">Desenvolvedor Fullstack na <strong>Empresa X</strong> - 2020 - 2021</p>
+    </div>
+  ),
+
+  2: (
+    <div className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
+      <h1 className="text-2xl font-bold">Formação academica</h1>
+        <p className="text-lg font-sans text-zinc-400">Graduação em <strong>Engenharia de Software</strong> - Universidade X - 2018 - 2022</p>
+    </div>
+  )
+}
+
+
   return (
     <div className="flex flex-col h-screen items-center">
       <div className=" text-white  md:w-4/6">
@@ -61,19 +102,32 @@ export default function Home() {
             </div> 
           </div>
         </section>
+        <section className="flex flex-col items-center md:items-start gap-4 p-4">
+          <div className="flex flex-col w-full md:w-auto md:flex-row bg-zinc-800 gap-2 p-1 rounded-md">
+              {tabs.map((tab)=>(
+                <button key={tab.id} 
+                className={`bg-zinc-800 md:w-52 text-sm py-1 rounded-md font-semibold text-zinc-400 ${
+                  activeTab === tab.id ? "bg-zinc-950 text-zinc-50": "text-white "}`}
+                onClick={() => setActiveTab(tab.id)}
+                >
+                  {tab.label}
+                </button>
+              ))}
+          </div>
+          <div>
+            
+          </div>
+        </section>
 
         <section className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
           <h1 className="text-2xl font-bold">Sobre mim</h1>
-          <p className="text-lg font-sans text-zinc-400">Sou Marlon Barreto Borges, apaixonado por tecnologia e desafios. Busco me desenvolver através de desafios usando minhas habilidades e crescer como desenvolvedor. Possuo excelentes habilidades de resolução de problemas, trabalho em equipe e criatividade.  
-            Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
-            Atualmente desenvolvo minhas aplicações com <strong>Javascript</strong>, uso tecnologias como: <strong>Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, Docker, Git</strong></p>
-        </section>
-
-        <section className="flex flex-col items-center justify-center h-2/5 m-10 border-2 rounded-md font-mono  p-4">
-          <h1 className="text-4xl font-mono">My Profile</h1>
-          <p className="text-lg font-mono">Bem vindo ao meu perfil</p>
+          <p className="text-lg font-sans text-zinc-400">Bem vindo ao meu perfil</p>
         </section>
       </div>
     </div>
   );
 }
+/*<h1 className="text-2xl font-bold">Sobre mim</h1>
+          <p className="text-lg font-sans text-zinc-400">Olá, sou Marlon Barreto Borges, desenvolvedor Fullstack.  
+            Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
+            Atualmente desenvolvo minhas aplicações com <strong>Javascript</strong>, uso tecnologias como: <strong>Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, Docker, Git</strong></p> */
