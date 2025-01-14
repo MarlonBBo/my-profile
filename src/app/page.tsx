@@ -1,5 +1,6 @@
 'use client';
 
+import { JSX } from 'react';
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
@@ -10,11 +11,13 @@ import '../styles/animation.css';
 import { useState } from "react";
 
 type Tab = {
-  id: number;
+  id: string;
   label: string;
 }
 
-
+type TabContent = {
+  [key: string]: JSX.Element;
+}
 
 const techs = [
   "TypeScript",
@@ -29,17 +32,17 @@ const techs = [
 
 export default function Home() {
 
-  const [activeTab, setActiveTab] = useState<number>(0);
+  const [activeTab, setActiveTab] = useState<string>("tab1");
 
   const tabs: Tab[] = [
-    { id: 0, label: "Sobre mim"},
-    { id: 1, label: "Experiência profissional"},
-    { id: 2, label: "Formação academica"},
+    { id: "tab1", label: "Sobre mim"},
+    { id: "tab2", label: "Experiência profissional"},
+    { id: "tab3", label: "Formação academica"},
   ];
 
-  const tabContent = {
-    0: (
-      <div className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
+  const tabContent: TabContent = {
+    tab1: (
+      <div className="flex flex-col mt-5 border border-zinc-700 gap-4 rounded-md p-4">
         <h1 className="text-2xl font-bold">Sobre mim</h1>
           <p className="text-lg font-sans text-zinc-400">Olá, sou Marlon Barreto Borges, desenvolvedor Fullstack.  
             Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
@@ -47,17 +50,17 @@ export default function Home() {
       </div>
   ),
 
-  1: (
-    <div className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
+  tab2: (
+    <div className="flex flex-col mt-5 border border-zinc-700 gap-4 rounded-md p-4">
       <h1 className="text-2xl font-bold">Experiência profissional</h1>
-        <p className="text-lg font-sans text-zinc-400">Desenvolvedor Fullstack na <strong>Empresa X</strong> - 2020 - 2021</p>
+        <p className="text-lg font-sans text-zinc-400">Desenvolvedor Fullstack Freelancer - 2023 - Atualmente</p>
     </div>
   ),
 
-  2: (
-    <div className="flex flex-col m-10 border border-zinc-700 gap-4 rounded-md p-4">
+  tab3: (
+    <div className="flex flex-col mt-5 border border-zinc-700 gap-4 rounded-md p-4">
       <h1 className="text-2xl font-bold">Formação academica</h1>
-        <p className="text-lg font-sans text-zinc-400">Graduação em <strong>Engenharia de Software</strong> - Universidade X - 2018 - 2022</p>
+        <p className="text-lg font-sans text-zinc-400">Graduação em <strong>Engenharia de Software</strong> - Universidade Estacio - 2024 - 2028</p>
     </div>
   )
 }
@@ -116,7 +119,7 @@ export default function Home() {
                 </button>
               ))}
           </div>
-          <div>
+          <div className='w-full'>
             {tabContent[activeTab]}
           </div>
         </section>
@@ -124,7 +127,3 @@ export default function Home() {
     </div>
   );
 }
-/*<h1 className="text-2xl font-bold">Sobre mim</h1>
-          <p className="text-lg font-sans text-zinc-400">Olá, sou Marlon Barreto Borges, desenvolvedor Fullstack.  
-            Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
-            Atualmente desenvolvo minhas aplicações com <strong>Javascript</strong>, uso tecnologias como: <strong>Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, Docker, Git</strong></p> */
