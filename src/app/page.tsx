@@ -4,6 +4,8 @@ import Image from "next/image";
 import '../styles/animation.css';
 import { Tabs } from "@/components/Tabs";
 import { Contacts } from "@/components/Contacts";
+import { Projects } from "@/components/Projects";
+
 
 const techs = [
   "TypeScript",
@@ -17,9 +19,6 @@ const techs = [
 
 
 export default function Home() {
-
-  
-
 
   return (
     <div className="flex flex-col h-screen items-center">
@@ -36,7 +35,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="flex gap-4 border-zinc-500 justify-center md:justify-start"> 
-              <Contacts/>
+              <Contacts />
             </div>
             <div className="txt-animado">
                 <span></span>
@@ -45,6 +44,10 @@ export default function Home() {
         </section>
         <section className="flex flex-col items-center md:items-start gap-4 p-4">
           <Tabs/>
+        </section>
+        <h1 className="text-2xl font-bold mx-4 mt-10">Meus projetos</h1>
+        <section>
+          <Projects/>
         </section>
       </div>
     </div>
