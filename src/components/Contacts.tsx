@@ -1,32 +1,35 @@
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { RiGithubLine } from "react-icons/ri";
+import { FiLinkedin } from "react-icons/fi";
+import { MdOutlineEmail } from "react-icons/md";
 import { IoIosPaper } from "react-icons/io";
+import ThemeSwitcher from "./theme-switcher";
+
 
 export function Contacts(){
     return (
           <>
-            <Link href="https://github.com/MarlonBBo" target="_blank" rel="noopener noreferrer">
-                <div className="border-2 border-zinc-700 p-2 rounded-xl hover:bg-zinc-700 transition duration-500">
-                  <FaGithub className="w-6 h-6"/>
+              <Link href="https://github.com/MarlonBBo" target="_blank" rel="noopener noreferrer">
+                <div className="border border-zinc-700 p-2 rounded-xl dark:hover:bg-zinc-700 hover:bg-zinc-200 transition duration-500">
+                  <RiGithubLine className="w-6 h-6 text-black dark:text-white"/>
                 </div>
               </Link>
               <Link href="https://www.linkedin.com/in/marlonbborges1606/ "target="_blank" rel="noopener noreferrer">
-                <div className="border-2 border-zinc-700 p-2 rounded-xl hover:bg-zinc-700 transition duration-500">
-                  <FaLinkedin className="w-6 h-6"/>
+                <div className="border border-zinc-700 dark:hover:bg-zinc-700 p-2 rounded-xl hover:bg-zinc-200 transition duration-500">
+                  <FiLinkedin className="w-6 h-6 text-black dark:text-white"/>
                 </div>
               </Link>
               <Link href="#">
-                <div className="border-2 border-zinc-700 p-2 rounded-xl hover:bg-zinc-700 transition duration-500">
-                  <MdEmail className="w-6 h-6"/>
+                <div className="border border-zinc-700 dark:hover:bg-zinc-700 p-2 rounded-xl hover:bg-zinc-200 transition duration-500">
+                  <MdOutlineEmail className="w-6 h-6 text-black dark:text-white"/>
                 </div>
               </Link>
               <a href="#" download="../public/Curriculo.pdf">
-                <div className="flex gap-2 border-2 border-zinc-700 p-2 rounded-xl hover:bg-zinc-700 transition duration-500">
-                  <IoIosPaper className="w-6 h-6"/> <p className="text-md font-bold">Download</p>
+                <div className="flex gap-2 border border-zinc-700 p-2 dark:hover:bg-zinc-700 rounded-xl hover:bg-zinc-200 transition duration-500">
+                  <IoIosPaper className="w-6 h-6 text-black dark:text-white"/>
                 </div>
               </a> 
+              <ThemeSwitcher/>
           </>
     )
 }
