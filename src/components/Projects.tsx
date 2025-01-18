@@ -29,8 +29,18 @@ export function Projects(){
           techs: ["TypeScript", "React", "Next", "Tailwindcss"],
           image: "https://i.imgur.com/eqXGru3.png",
           url: "https://github.com/MarlonBBo/my-profile"
+        },
+        {
+          id: "4",
+          title: "Nutrition",
+          description: "Aplicativo criado com React Native que cria suas dietas com base em seus objetivos, nivel de atividade física, etc... Essas dietas são criadas por uma Inteligência Artificial.",
+          techs: ["TypeScript", "React Native", "CSS", "Nest", "React Query"],
+          image: "https://i.imgur.com/p2D36qT.png",
+          url: "https://github.com/MarlonBBo/nutrition"
         }
       ]
+          
+      
 
     return(        
             <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 p-4 gap-4">
