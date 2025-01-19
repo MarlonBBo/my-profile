@@ -1,3 +1,5 @@
+
+
 import Link from "next/link";
 import { RiGithubLine } from "react-icons/ri";
 import { FiLinkedin } from "react-icons/fi";
@@ -24,7 +26,7 @@ export function Contacts(){
                   <MdOutlineEmail className="w-6 h-6 text-black dark:text-white"/>
                 </div>
               </Link>
-              <a href="/documents/Cv.pdf" download="Curriculo.pdf">
+              <a href="/documents/Cv.pdf" download>
                 <div className="flex gap-2 border border-zinc-700 p-2 dark:hover:bg-zinc-700 rounded-xl hover:bg-zinc-200 transition duration-500">
                   <IoIosPaper className="w-6 h-6 text-black dark:text-white"/>
                 </div>
