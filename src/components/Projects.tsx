@@ -12,7 +12,7 @@ export function Projects(){
           description: "O Site oferece uma lista com vários filmes que vem de uma API. Podendo ver detalhes do filme, buscar por outros filmes. Contendo Autentificação do usuário.",
           techs: ["React", "TypeScript","JavaScript", "Tailwindcss", "PostgreSQL","Nest", "Prisma", "Docker"],
           image: "https://camo.githubusercontent.com/10b7d33e4dad5b33ebc331752c7a4510c4387d81dcfb2823397038e603f8d490/68747470733a2f2f692e696d6775722e636f6d2f684a74446665562e706e67",
-          url: "https://github.com/MarlonBBo/Project-Cine"
+          url: "http://0nzcine.site/"
         },
         {
           id: "2",
