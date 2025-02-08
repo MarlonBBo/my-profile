@@ -20,7 +20,7 @@ export function Tabs(){
         <h1 className="text-2xl font-bold">Sobre mim</h1>
           <p className="text-lg font-sans text-zinc-500">Olá, sou Marlon Barreto Borges, desenvolvedor Fullstack.  
             Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
-            Atualmente desenvolvo minhas aplicações com <strong>Javascript</strong>, uso tecnologias como: <strong>Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, Docker, Git</strong></p>
+            Atualmente desenvolvo minhas aplicações com <strong>C# e Javascript</strong>, uso tecnologias como: <strong> .Net, Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, MySQL, Docker, Git</strong></p>
       </div>
   ),
 
