@@ -33,7 +33,7 @@ export function Tabs(){
 
     tab3: (
       <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
-        <h1 className="text-2xl font-bold">Formação academica</h1>
+        <h1 className="text-2xl font-bold">Formação acadêmica</h1>
           <p className="text-lg font-sans text-zinc-500">Graduação em <strong>Engenharia de Software</strong> - Universidade Estacio - 2024 - 2028</p>
       </div>
     )
