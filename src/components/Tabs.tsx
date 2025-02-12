@@ -11,7 +11,7 @@ export function Tabs(){
   const tabs: Tab[] = [
     { id: "tab1", label: "Sobre mim"},
     { id: "tab2", label: "Experiência profissional"},
-    { id: "tab3", label: "Formação academica"},
+    { id: "tab3", label: "Formação acadêmica"},
   ];
 
   const tabContent: TabContent = {
@@ -26,15 +26,21 @@ export function Tabs(){
 
     tab2: (
       <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
-        <h1 className="text-2xl font-bold">Experiência profissional</h1>
-          <p className="text-lg font-sans text-zinc-500">Desenvolvedor Fullstack Freelancer - 2023 - Atualmente</p>
+        <h1 className="text-2xl font-bold">Freelancer</h1>
+          <p className="text-lg font-sans text-zinc-500">Desenvolvedor Fullstack Freelancer • 2023 - 2025</p>
       </div>
     ),
 
     tab3: (
+      <div>
       <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
-        <h1 className="text-2xl font-bold">Formação acadêmica</h1>
-          <p className="text-lg font-sans text-zinc-500">Graduação em <strong>Engenharia de Software</strong> - Universidade Estacio - 2024 - 2028</p>
+        <h1 className="text-2xl font-bold">Graduação em Engenharia de Softwere</h1>
+          <p className="text-lg font-sans text-zinc-500">Graduação em <strong>Engenharia de Software</strong> - Universidade Estacio • 2024 - 2028</p>
+      </div>
+      <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
+        <h1 className="text-2xl font-bold">Formação C# .NET - Udemy</h1>
+          <p className="text-lg font-sans text-zinc-500">Curso de <strong>C# .NET</strong> - Udemy • 2025</p>
+      </div>
       </div>
     )
 }

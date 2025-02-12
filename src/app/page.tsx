@@ -9,6 +9,7 @@ import { Projects } from "@/components/Projects";
 const techs = [
   "C#",
   ".NET",
+  "TypeScript",
   "React.Js",
   "Node.js",
   "PostgreSQL",
