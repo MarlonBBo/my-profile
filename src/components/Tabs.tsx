@@ -20,15 +20,22 @@ export function Tabs(){
         <h1 className="text-2xl font-bold">Sobre mim</h1>
           <p className="text-lg font-sans text-zinc-500">Olá, sou Marlon Barreto Borges, desenvolvedor Fullstack.  
             Iniciei na programação querendo criar meus próprios sites e apps, o que me fez desenvolver uma abordagem criativa e proativa para resolver desafios. Sou uma pessoa bem-humorada que busca constantemente maneiras de criar um ambiente colaborativo e divertido.
-            Atualmente desenvolvo minhas aplicações com <strong>C# e Javascript</strong>, uso tecnologias como: <strong> .Net, Typescript, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, MySQL, Docker, Git</strong></p>
+            Atualmente desenvolvo minhas aplicações com <strong>C# e Javascript</strong>, uso tecnologias como: <strong> .Net, Typescript, React Native, React, Tailwindcss, NodeJS, Express, NestJS, Prisma, PostgresSQL, MySQL, Docker, Git</strong></p>
       </div>
   ),
 
     tab2: (
+      <div>
       <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
-        <h1 className="text-2xl font-bold">Freelancer</h1>
-          <p className="text-lg font-sans text-zinc-500">Desenvolvedor Fullstack Freelancer • 2023 - 2025</p>
+        <h1 className="text-2xl font-bold">Desenvolvedor Mobile</h1>
+          <p className="text-lg font-sans text-zinc-500">Tetra Soluções Empresariais • Março/2025 - Atualmente</p>
       </div>
+      
+      <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
+      <h1 className="text-2xl font-bold">Desenvolvedor Fullstack</h1>
+        <p className="text-lg font-sans text-zinc-500">Freelancer • 2023 - 2025</p>
+    </div>
+    </div>
     ),
 
     tab3: (

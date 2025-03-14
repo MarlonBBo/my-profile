@@ -17,7 +17,7 @@ export function Projects(){
         {
           id: "2",
           title: "Project Blog",
-          description: "Essa aplicação é de um blog feito com NODE.JS. Focado majoritariamente no back-end, tem front-end simples utilizando handlebars. Nessa aplicação o usuário navega pelas páginas de posts e categorias, já o/os admin(s) podem alterar as páginas de posts e categorias, adcionando ou subtraindo postagens.",
+          description: "Nessa aplicação o usuário navega pelas páginas de posts e categorias, já o/os admin(s) podem alterar as páginas de posts e categorias, adcionando ou subtraindo postagens.",
           techs: ["Node", "JavaScript", "Bootstrap", "Express", "MongoDB", "Handlebars", "Docker"],
           image: "https://camo.githubusercontent.com/9be1252b2665c7187fa575b900b10a0b449699005a3e954955422238a47b661d/68747470733a2f2f692e696d6775722e636f6d2f33506e737563612e706e67",
           url: "https://github.com/MarlonBBo/Project-Blog"
