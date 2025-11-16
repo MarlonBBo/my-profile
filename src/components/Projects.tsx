@@ -8,35 +8,11 @@ export function Projects(){
     const project: Project[] = [
         {
           id: "1",
-          title: "Project Cine",
-          description: "O Site oferece uma lista com vários filmes que vem de uma API. Podendo ver detalhes do filme, buscar por outros filmes. Contendo Autentificação do usuário.",
-          techs: ["React", "TypeScript","JavaScript", "Tailwindcss", "PostgreSQL","Nest", "Prisma", "Docker"],
-          image: "https://camo.githubusercontent.com/10b7d33e4dad5b33ebc331752c7a4510c4387d81dcfb2823397038e603f8d490/68747470733a2f2f692e696d6775722e636f6d2f684a74446665562e706e67",
-          url: "http://0nzcine.site/"
-        },
-        {
-          id: "2",
-          title: "Project Blog",
-          description: "Nessa aplicação o usuário navega pelas páginas de posts e categorias, já o/os admin(s) podem alterar as páginas de posts e categorias, adcionando ou subtraindo postagens.",
-          techs: ["Node", "JavaScript", "Bootstrap", "Express", "MongoDB", "Handlebars", "Docker"],
-          image: "https://camo.githubusercontent.com/9be1252b2665c7187fa575b900b10a0b449699005a3e954955422238a47b661d/68747470733a2f2f692e696d6775722e636f6d2f33506e737563612e706e67",
-          url: "https://github.com/MarlonBBo/Project-Blog"
-        },
-        {
-          id: "3",
-          title: "Portfólio",
-          description: "Portfólio criado para apresentar um pouco mais dos meus projetos e algumas informações pessoais",
-          techs: ["TypeScript", "React", "Next", "Tailwindcss"],
-          image: "https://i.imgur.com/eqXGru3.png",
-          url: "https://github.com/MarlonBBo/my-profile"
-        },
-        {
-          id: "4",
-          title: "Nutrition",
-          description: "Aplicativo criado com React Native que cria suas dietas com base em seus objetivos, nivel de atividade física, etc... Essas dietas são criadas por uma Inteligência Artificial.",
-          techs: ["TypeScript", "React Native", "CSS", "Nest", "React Query"],
-          image: "https://i.imgur.com/p2D36qT.png",
-          url: "https://github.com/MarlonBBo/nutrition"
+          title: "My Wallet Local",
+          description: "Aplicativo de controle de finanças pessoais, com controle de carteiras, categorias, transações e anotações.",
+          techs: ["React Native", "TypeScript","JavaScript", "Expo", "SQLite", "Nativewind", "Tailwindcss", "Zustand", "Reusables", "react-native-gifted-charts"],
+          image: "https://i.imgur.com/0cCbLp4.png",
+          url: "https://mywalletlocal.store"
         }
       ]
           
