@@ -32,23 +32,60 @@ export function Tabs(){
           <p className="text-lg font-sans text-zinc-500">Tetra Soluções Empresariais • Março/2025 - Atualmente</p>
           <div className="mt-4 space-y-4">
             <div>
-              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Desenvolvimento Mobile</h2>
-              <p className="text-base font-sans text-zinc-600 dark:text-zinc-400">
-                Durante minha atuação na Tetra Soluções, fui responsável pelo desenvolvimento completo de um aplicativo mobile que funciona como extensão do sistema interno SG. O projeto foi desenvolvido do zero utilizando  <strong>React Native</strong>, <strong>JavaScript</strong>, <strong>Redux</strong>, <strong>Styled Components</strong>, <strong>AsyncStorage</strong> e <strong>Expo SQLite</strong>, garantindo uma interface moderna, performance sólida e armazenamento local eficiente.
+              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Desenvolvimento do aplicativo Tetra One</h2>
+              <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
+                Desenvolvimento do aplicativo Tetra One do zero, implementando funcionalidades como:
               </p>
+              <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
+                <li>Controle e gestão de estoque</li>
+                <li>Balanço e conferência de mercadorias</li>
+                <li>Expedição para operações de atacado</li>
+                <li>Impressão e gerenciamento de etiquetas</li>
+                <li>Conferência de compras e processos internos</li>
+              </ul>
             </div>
             
             <div>
-              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Desenvolvimento Backend</h2>
-              <p className="text-base font-sans text-zinc-600 dark:text-zinc-400">
-                Atuei no backend criando <strong>APIs RESTful</strong> com <strong>C# ASP.NET</strong>, implementando novas funcionalidades e viabilizando integrações consistentes entre o aplicativo mobile e o sistema principal.
+              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Criação de APIs em C# com ASP.NET</h2>
+              <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
+                Criação de APIs em C# com ASP.NET, incluindo:
               </p>
+              <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
+                <li>Endpoints completos para consumo e manipulação de dados</li>
+                <li>Integração segura entre app, web e banco de dados</li>
+                <li>Implementação de regras de negócio e validações</li>
+              </ul>
             </div>
             
             <div>
-              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Banco de Dados e Desenvolvimento Web</h2>
+              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Modelagem e estruturação do banco de dados</h2>
+              <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
+                Modelagem e estruturação do banco de dados, definindo:
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
+                <li>Tabelas, relacionamentos e constraints</li>
+                <li>Ajustes de performance e normalização</li>
+                <li>Implementação de melhorias e migrações conforme novas demandas</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Desenvolvimento e manutenção do sistema web</h2>
+              <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
+                Desenvolvimento e manutenção do sistema web, utilizando React, incluindo:
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
+                <li>Criação de novas funcionalidades e componentes reutilizáveis</li>
+                <li>Refatoração de trechos críticos</li>
+                <li>Melhorias de usabilidade e performance</li>
+                <li>Correção de bugs e ajustes contínuos</li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Evolução do ecossistema Tetra</h2>
               <p className="text-base font-sans text-zinc-600 dark:text-zinc-400">
-                Contribuí para a <strong>modelagem e estruturação de tabelas no SQL Server</strong>, além de realizar manutenção, correções e desenvolvimento de novas funcionalidades nos sistemas web internos.
+                Participação ativa na evolução do ecossistema Tetra, contribuindo tanto para infraestrutura, quanto para a experiência do usuário e estabilidade das operações internas.
               </p>
             </div>
           </div>
