@@ -9,10 +9,13 @@ import { Projects } from "@/components/Projects";
 const techs = [
   "React Native",
   "TypeScript",
+  "MVVM",
   "Expo",
   "EAS Build",
   "React Navigation",
   "Redux",
+  "Jest",
+  "Testing-Library",
   "Context API",
   "Zustand",
   "Axios",
