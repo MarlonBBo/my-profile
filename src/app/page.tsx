@@ -10,6 +10,7 @@ const techs = [
   "React Native",
   "TypeScript",
   "MVVM",
+  "Firebase",
   "Expo",
   "EAS Build",
   "React Navigation",
