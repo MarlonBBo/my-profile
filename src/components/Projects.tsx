@@ -12,7 +12,7 @@ export function Projects(){
           description: "Aplicativo de controle de finanças pessoais, com controle de carteiras, categorias, transações e anotações.",
           techs: ["React Native", "TypeScript","JavaScript", "Expo", "SQLite", "Nativewind", "Tailwindcss", "Zustand", "Reusables", "react-native-gifted-charts"],
           image: "https://i.imgur.com/0cCbLp4.png",
-          url: "https://mywalletlocal.store"
+          url: "https://my-wallet-local-web-1l48.vercel.app/"
         }
       ]
           
