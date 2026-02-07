@@ -30,43 +30,61 @@ export function Tabs(){
       <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
         <h1 className="text-2xl font-bold">Desenvolvedor Mobile</h1>
           <p className="text-lg font-sans text-zinc-500">Tetra Soluções Empresariais • Março/2025 - Atualmente</p>
+          <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mt-2 italic">
+            Atuação no desenvolvimento completo do aplicativo Tetra One e sistemas associados, participando desde a concepção da arquitetura até a evolução contínua do produto, com foco em estabilidade, escalabilidade e eficiência operacional.
+          </p>
           <div className="mt-4 space-y-4">
             <div>
               <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Desenvolvimento do aplicativo Tetra One</h2>
               <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
-                Desenvolvimento do aplicativo Tetra One do zero, implementando funcionalidades como:
+                Desenvolvimento do aplicativo Tetra One do zero, criando funcionalidades para apoiar a digitalização das operações logísticas:
               </p>
               <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
-                <li>Controle e gestão de estoque</li>
-                <li>Balanço e conferência de mercadorias</li>
+                <li>Gestão de estoque e controle de inventário</li>
+                <li>Conferência de mercadorias e balanço</li>
                 <li>Expedição para operações de atacado</li>
                 <li>Impressão e gerenciamento de etiquetas</li>
-                <li>Conferência de compras e processos internos</li>
+                <li>Controle de processos internos e conferência de compras</li>
               </ul>
+              <div className="mt-3 p-3 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-500 rounded-r-md">
+                <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                  ➝ Contribuiu para redução de até 40% em erros operacionais e maior controle de inventário
+                </p>
+              </div>
             </div>
             
             <div>
               <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Criação de APIs em C# com ASP.NET</h2>
               <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
-                Criação de APIs em C# com ASP.NET, incluindo:
+                Estruturação de endpoints completos para comunicação entre app mobile, sistema web e banco de dados:
               </p>
               <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
                 <li>Endpoints completos para consumo e manipulação de dados</li>
                 <li>Integração segura entre app, web e banco de dados</li>
                 <li>Implementação de regras de negócio e validações</li>
               </ul>
+              <div className="mt-3 p-3 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-500 rounded-r-md">
+                <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                  ➝ Maior confiabilidade dos dados e redução de inconsistências através de integrações seguras
+                </p>
+              </div>
             </div>
             
             <div>
               <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Modelagem e estruturação do banco de dados</h2>
               <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
-                Modelagem e estruturação do banco de dados, definindo:
+                Definição de tabelas, relacionamentos, constraints e ajustes de performance, além de execução de migrações e melhorias conforme novas demandas:
               </p>
               <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
-                <li>Tabelas, relacionamentos e constraints</li>
+                <li>Tabelas, relacionamentos e constraints bem definidos</li>
                 <li>Ajustes de performance e normalização</li>
                 <li>Implementação de melhorias e migrações conforme novas demandas</li>
               </ul>
+              <div className="mt-3 p-3 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-500 rounded-r-md">
+                <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                  ➝ Otimizações que resultaram em melhora de performance nas consultas críticas e maior organização da base de dados
+                </p>
+              </div>
             </div>
 
             <div>
@@ -85,8 +103,13 @@ export function Tabs(){
             <div>
               <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Evolução do ecossistema Tetra</h2>
               <p className="text-base font-sans text-zinc-600 dark:text-zinc-400">
-                Participação ativa na evolução do ecossistema Tetra, contribuindo tanto para infraestrutura, quanto para a experiência do usuário e estabilidade das operações internas.
+                Atuação contínua na evolução do ecossistema, colaborando com decisões técnicas, melhorias de estabilidade e suporte à operação diária da empresa.
               </p>
+              <div className="mt-3 p-3 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-500 rounded-r-md">
+                <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                  ➝ Participação direta na sustentação de um sistema utilizado em processos essenciais da operação
+                </p>
+              </div>
             </div>
           </div>
       </div>
