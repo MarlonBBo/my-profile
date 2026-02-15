@@ -110,6 +110,50 @@ export function Tabs(){
                   ➝ Participação direta na sustentação de um sistema utilizado em processos essenciais da operação
                 </p>
               </div>
+
+                      <div className="mt-4 space-y-4">
+          <div>
+            <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Reestruturação Completa de Aplicativo</h2>
+            <p className="text-sm font-medium text-zinc-500 mb-2">Refatoração Arquitetural — React Native</p>
+            <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
+              Aplicativo desenvolvido às pressas, sem arquitetura definida, sem TypeScript, sem testes, com múltiplas dependências desnecessárias, arquivos com +1000 linhas, baixa componentização e alta complexidade. Optamos por refazer do zero devido à inviabilidade de manutenção incremental.
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
+              <li>Implementação da arquitetura MVVM e migração completa para TypeScript, estabelecendo padrões de design consistentes em toda a aplicação.</li>
+              <li>Criação de hooks customizados otimizados e componentização bem definida, eliminando arquivos monolíticos e reduzindo complexidade.</li>
+              <li>Implementação de testes automatizados e redução de dependências externas desnecessárias.</li>
+            </ul>
+            <div className="mt-3 p-3 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-500 rounded-r-md">
+              <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                ➝ Código mais escalável, legível e com base sólida para crescimento futuro. Manutenção facilitada e maior produtividade da equipe.
+              </p>
+            </div>
+            <p className="mt-2 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+              <strong>Diferencial:</strong> Visão arquitetural + pensamento de longo prazo + foco em qualidade e escalabilidade.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Otimização de Performance em Lista com +70 mil Produtos</h2>
+            <p className="text-sm font-medium text-zinc-500 mb-2">React Native — Otimização de FlatList</p>
+            <p className="text-base font-sans text-zinc-600 dark:text-zinc-400 mb-2">
+              Cliente possuía mais de 70 mil produtos cadastrados no banco de dados. A listagem no aplicativo estava lenta, travando e pulando itens durante o scroll, comprometendo a experiência do usuário.
+            </p>
+            <ul className="list-disc list-inside space-y-1 text-base font-sans text-zinc-600 dark:text-zinc-400 ml-4">
+              <li>Estudo aprofundado da documentação oficial do React Native e aplicação de boas práticas de otimização da FlatList.</li>
+              <li>Aplicação de keyExtractor, ajuste de initialNumToRender, implementação de getItemLayout e controle de re-renderizações desnecessárias.</li>
+              <li>Uso de memo, componentização adequada e paginação/virtualização eficiente.</li>
+            </ul>
+            <div className="mt-3 p-3 bg-emerald-50 dark:bg-emerald-900/20 border-l-4 border-emerald-500 rounded-r-md">
+              <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                ➝ Redução significativa de travamentos e scroll fluido com grande volume de dados. Aumento da confiabilidade do cliente.
+              </p>
+            </div>
+            <p className="mt-2 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+              <strong>Diferencial:</strong> Capacidade de diagnóstico técnico + estudo autônomo + aplicação prática baseada em documentação oficial.
+            </p>
+          </div>
+        </div>
             </div>
           </div>
       </div>
@@ -117,6 +161,8 @@ export function Tabs(){
       <div className="flex flex-col mt-5 border border-zinc-300 dark:border-zinc-700 gap-4 rounded-md p-4">
       <h1 className="text-2xl font-bold">Desenvolvedor Fullstack</h1>
         <p className="text-lg font-sans text-zinc-500">Freelancer • 2023 - 2025</p>
+        
+
     </div>
     </div>
     ),
